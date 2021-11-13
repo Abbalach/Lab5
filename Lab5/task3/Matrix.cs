@@ -360,7 +360,7 @@ namespace Lab5
             var sortedMatrix1 = MatrixCalculation.MatrixSorter(mainElements,addElements);
             if (sortedMatrix1 == null)
             {
-                answerTextBox.Text = "Not possible to calculate 0";
+                answerTextBox.Text = "Not possible to calculate";
                 answerTextBox.Width = answerTextBox.Text.Length * 7;
             }
             else
@@ -376,7 +376,7 @@ namespace Lab5
                 var answers = MatrixCalculation.CalculateMatrix(turnedMains, sortedMatrix1.Second);
                 if (answers == null)
                 {
-                    answerTextBox.Text = "Not possible to calculate 2";
+                    answerTextBox.Text = "Not possible to calculate";
                     answerTextBox.Width = answerTextBox.Text.Length * 7;
                 }
                 else
