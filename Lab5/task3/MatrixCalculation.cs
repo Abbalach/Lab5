@@ -201,11 +201,11 @@ namespace Lab5
                     counter++;
                 }
             }
-            for (int i = 0; i < mainElements.GetLength(1); i++)
+            for (int i = 0; i < ChangedMatrixLines.Length; i++)
             {
-                for (int j = 0; j < mainElements.GetLength(1); j++)
+                for (int j = 0; j < ChangedMatrixLines.Length; j++)
                 {
-                    for (int L = 0; L < mainElements.GetLength(0); L++)
+                    for (int L = 0; L < ChangedMatrixLines[0].Count; L++)
                     {
                         if (matrixLines[i][L] == 0 && matrixLines[j][L] != 0)
                         {
